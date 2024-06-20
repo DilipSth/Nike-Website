@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { HiArrowCircleRight } from "react-icons/hi";
 
 const Hero = () => {
-  const [imageUrl, setImageUrl] = useState('/seven.png');
+  const [imageUrl, setImageUrl] = useState("/seven.png");
 
   useEffect(() => {
     setImageUrl(imageUrl);
@@ -74,28 +74,40 @@ const Hero = () => {
             </div>
           </div>
           <div>
-            <div style={{
+            <div
+              style={{
                 borderColor: imageUrl === "/two.png" ? "#ff6452" : "",
               }}
-              className="border-2 border-solid rounded-xl border-transparent cursor-pointer mx-sm:flex-1">
+              className="border-2 border-solid rounded-xl border-transparent cursor-pointer mx-sm:flex-1"
+            >
               <div className="flex justify-center items-center bg-[url('/bgFirst.jpg')] bg-center bg-cover sm:w-40 sm:h-40 rounded-xl maz-sm:p-4">
-                <img src="/two.png" alt=""  width="127"
+                <img
+                  src="/two.png"
+                  alt=""
+                  width="127"
                   height="103"
                   className="object-contain max-w-full h-auto"
-                  onClick={() => setImageUrl("/two.png")}/>
+                  onClick={() => setImageUrl("/two.png")}
+                />
               </div>
             </div>
           </div>
           <div>
-            <div style={{
+            <div
+              style={{
                 borderColor: imageUrl === "/eight.png" ? "#ff6452" : "",
               }}
-              className="border-2 border-solid rounded-xl border-transparent cursor-pointer mx-sm:flex-1">
+              className="border-2 border-solid rounded-xl border-transparent cursor-pointer mx-sm:flex-1"
+            >
               <div className="flex justify-center items-center bg-[url('/bgFirst.jpg')] bg-center bg-cover sm:w-40 sm:h-40 rounded-xl maz-sm:p-4">
-                <img src="/eight.png" alt=""  width="127"
+                <img
+                  src="/eight.png"
+                  alt=""
+                  width="127"
                   height="103"
                   className="object-contain max-w-full h-auto"
-                  onClick={() => setImageUrl("/eight.png")}/>
+                  onClick={() => setImageUrl("/eight.png")}
+                />
               </div>
             </div>
           </div>
